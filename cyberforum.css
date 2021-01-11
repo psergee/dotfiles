@@ -1,0 +1,59 @@
+.alt2, .alt2Active {
+    background: #3e3e3e95;
+    color: #989da0;
+}
+
+body {
+    background: #FFFFFF;
+    color: #000000;
+    font: 13px verdana,geneva,lucida,"lucida grande",arial,helvetica,sans-serif;
+    padding: 0px;
+
+    background-image: url("https://i.imgur.com/VKTPd2M.jpg"); 
+    background-repeat: repeat-y; 
+}
+
+.page {
+    background: #ffffff00;
+    color: #000000;
+}
+
+.tborder {
+    background: #3e3e3e95;
+    color: #000000;
+    border: 1px solid #0B198C;
+}
+
+
+.alt1, .alt1Active {
+    background: #3e3e3e95;
+    color: #bac4ca;
+}
+
+a:link, body_alink {
+    color: #f0c0ff;
+    text-decoration: underline;
+}
+
+.bigusername {
+    font-size: 11pt;
+    color: #bf3ac5;
+    white-space: normal;
+}
+
+#kr_quickreply {
+    background: #3e3e3e95;
+    color: #bac4ca;
+}
+
+.panelsurround {
+    background: #3e3e3e95;
+    color: #bac4ca;
+}
+
+.panel {
+    background: #3e3e3e95;
+    color: #bac4ca;
+    padding: 5px;
+    border: 2px outset;
+}
