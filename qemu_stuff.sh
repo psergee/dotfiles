@@ -12,3 +12,13 @@ rdesktop -E -a 32 -x l -f -u admin -p <password> localhost
 
 # For Linux (vnc)
 qemu-system-x86_64 fedora.img -m 8G -smp 2 -enable-kvm -vnc :1
+
+# Bridge
+```
+sudo virsh net-start --network default
+cat /etc/qemu/bridge.conf 
+allow virbr0
+sudo chmod 4755 /usr/lib/qemu/qemu-bridge-helper
+sudo adduser <user> libvirt
+qemu-system-x86_64 -drive format=raw,file=linux.img -m 6G -smp cores=2 -enable-kvm -vga qxl -cpu host -netdev bridge,id=hn0,br=virbr0 -device virtio-net-pci,netdev=hn0,id=nic1
+```
