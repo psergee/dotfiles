@@ -71,13 +71,3 @@ if has('win32')
     behave mswin
     set keymodel-=stopsel
 endif
-
-" Go-related stuff
-" Format on save.
-let g:go_fmt_autosave = 1
-
-" Auto-completion on dot.
-au filetype go inoremap <buffer> . .<C-x><C-o>
-
-" Imports on save.
-let g:go_fmt_command = "goimports"
